@@ -1,0 +1,58 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/topLayoutBar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="#00816A"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<ImageView
+				android:id="@+id/topLayoutBarBack"
+				android:layout_width="48dp"
+				android:layout_height="48dp"
+				android:padding="8dp"
+				android:src="@drawable/back"
+				android:scaleType="centerCrop"
+				android:background="?android:attr/selectableItemBackgroundBorderless"
+				android:clickable="true"
+				android:focusable="true" />
+			<TextView
+				android:id="@+id/topLayoutBarTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="Create"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF"
+				android:layout_weight="1"
+				app:fontFamily="@font/sofia" />
+			<ImageView
+				android:id="@+id/topLayoutBarImgSpc"
+				android:layout_width="48dp"
+				android:layout_height="48dp"
+				android:padding="12dp"
+				android:src="@drawable/default_image"
+				android:scaleType="centerCrop"
+				android:alpha="0.0" />
+		</LinearLayout>
+	</LinearLayout>
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/_fab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="16dp"
+		android:layout_gravity="right|bottom"
+		app:srcCompat="@drawable/preview" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
